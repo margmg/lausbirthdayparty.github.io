@@ -924,7 +924,8 @@ table, figure{
     }
 
     .name-list-mobile li:nth-child(1) {
-        font-size: 3em; 
+        font-size: 2.4em; 
+        margin-bottom: 4%;
     }
 
     .name-list-mobile li:nth-child(2) {
