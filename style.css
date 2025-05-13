@@ -672,7 +672,7 @@ input[type="text"], #textarea {
     }
 } */
 
-.info-up-down{
+.info-up-down, .info-upcoming-down{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -727,6 +727,7 @@ input[type="text"], #textarea {
     text-align: center;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
+    width:auto;
 }
 
 .event-tickets-button-upcoming:hover {
