@@ -118,7 +118,7 @@
 
 /* HOME */
 
-#homeMobile{
+#homeMobile, #homeMobile2{
     display: none;
 }
 
@@ -128,8 +128,34 @@
     left: 50%; 
     transform: translate(-45%, -50%); 
 }
+.center-image2 {
+    position: absolute;
+    height: 95vh;
+    top: 160%;
+    left: 50%; 
+    transform: translate(-45%, -50%); 
+    justify-content: center;
+}
 
-.name-list {
+/* .link-home2{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+
+} */
+
+.center-image img {
+    width: 550px;
+    object-fit: cover; 
+}
+
+.center-image2 img{
+    width: 550px;
+    height: auto;
+    object-fit: cover; 
+}
+
+.name-list, .name-list2 {
     position: absolute;
     top: 15%;
     left: 10%;
@@ -137,7 +163,11 @@
     z-index: 1; 
 }
 
-.event-info {
+.name-list2{
+    top: 120%;
+}
+
+.event-info, .event-info2 {
     position: absolute;
     top: 40%;
     right: 3%;
@@ -145,11 +175,15 @@
     z-index: 1; 
 }
 
+.event-info2{
+    top: 140%;
+}
+
 .venue-mobile{
     display: none;
 }
 
-.name-list li , .event-info li {
+.name-list, .name-list2 li , .event-info li {
     font-weight: bold;
     color: var(--maincolor-darkpink); 
     margin: 15px 0;
@@ -159,37 +193,55 @@
     font-size: 6.25em; 
 }
 
+.name-list2 li:nth-child(1) {
+    font-size: 6.25em; 
+}
+
 .name-list li:nth-child(2) {
     font-size: 5em; 
+}
+
+.name-list2 li:nth-child(2) {
+    font-size: 4em; 
 }
 
 .name-list li:nth-child(3) {
     font-size: 4.375em; 
 }
 
+.name-list2 li:nth-child(3) {
+    font-size: 3.735em; 
+}
+
 .name-list li:nth-child(4) {
     font-size: 3.75em; 
 }
 
+.name-list2 li:nth-child(4) {
+    font-size: 2.75em; 
+}
 
 .event-info li:nth-child(1) {
+    font-size: 5.625em;
+}
+.event-info2 li:nth-child(1) {
     font-size: 5.625em;
 }
 
 .event-info li:nth-child(2) {
     font-size: 9.84em; 
 }
+.event-info2 li:nth-child(2) {
+    font-size: 9.84em; 
+}
 
 .event-info li:nth-child(3) {
     font-size: 2.19em;
 }
-
-
-/* Immagine responsive */
-.center-image img {
-    width: 75%;
-    object-fit: cover; 
+.event-info2 li:nth-child(3) {
+    font-size: 2.19em;
 }
+
 
 /* BIRTHDAYS */
 
@@ -869,11 +921,11 @@ table, figure{
     }
 
     /*HOME*/
-    #homeDesktop {
+    #homeDesktop, #homeDesktop2 {
         display: none;
     }
 
-    #homeMobile{
+    #homeMobile, #homeMobile2{
         display: flex;
         flex-direction: column;
     }
@@ -908,17 +960,22 @@ table, figure{
         object-fit: cover; 
     }
 
-    .name-list-mobile{
+    .name-list-mobile, .name-list-mobile-lungo{
         display: flex;
         flex-direction: column;
         align-items: left;
         justify-content: center;
-        margin-top: 18%;
+        margin-top: 16%;
         margin-left: 0;
         padding: 0 10px 10px 10px;
         font-weight: 600;
-        line-height: 2.2em;
+        line-height: 3em;
     }
+
+    .name-list-mobile-lungo{
+        margin-top: 5%;
+    } 
+
 
     .name-list-mobile li {
         font-size: 3em; 
@@ -926,7 +983,6 @@ table, figure{
 
     .name-list-mobile li:nth-child(1) {
         font-size: 2.4em; 
-        margin-bottom: 4%;
     }
 
     .name-list-mobile li:nth-child(2) {
@@ -938,6 +994,22 @@ table, figure{
     }
 
     .name-list-mobile li:nth-child(4) {
+        font-size: 1em; 
+    }
+
+    .name-list-mobile-lungo li:nth-child(1) {
+        font-size: 2.1em; 
+    }
+
+    .name-list-mobile-lungo li:nth-child(2) {
+        font-size: 1.8em; 
+    }
+
+    .name-list-mobile-lungo li:nth-child(3) {
+        font-size: 1.8em; 
+    }
+
+    .name-list-mobile-lungo li:nth-child(4) {
         font-size: 1em; 
     }
 
@@ -953,6 +1025,11 @@ table, figure{
         font-size: 1.4em; 
     }
 
+    .separazione{
+        margin-top: 5%;
+        background-color: #ff5159;
+        height: 1px;
+    }
     /* ABOUT */
     .about-body {
         overflow-x: hidden;
@@ -1349,7 +1426,7 @@ table, figure{
     
     /* HOME */
 
-    #homeDesktop {
+    #homeDesktop, #homeDesktop2 {
         display: none;
     }
 
@@ -1704,6 +1781,10 @@ table, figure{
     .section-event{
         overflow: scroll;
     }
+
+    .lineup-event{
+        margin-bottom: 8%;
+    }
     
     .evento-up{
         display: flex;
@@ -1778,13 +1859,13 @@ table, figure{
         align-self: left;
         padding-top: 15%;
         width: 100%;
-        max-width: 600px;
         height: auto;
         padding-left: 0;
       }
 
       .poster-evento img{
         width: 100%;
+        object-fit: cover;
       }
 
       table, figure{
@@ -1795,7 +1876,7 @@ table, figure{
         display: none;
     }
     .event-tickets-button-upcoming{
-        width: 100%;
+        width: 350px;
     }
 }
 
