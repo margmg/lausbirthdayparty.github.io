@@ -983,6 +983,7 @@ table, figure{
 
     .name-list-mobile li:nth-child(1) {
         font-size: 2.4em; 
+        line-height: 1.2em;
     }
 
     .name-list-mobile li:nth-child(2) {
