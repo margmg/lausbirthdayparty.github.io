@@ -183,7 +183,7 @@
     display: none;
 }
 
-.name-list, .name-list2 li , .event-info li {
+.name-list li, .name-list2 li , .event-info li, .event-info2 {
     font-weight: bold;
     color: var(--maincolor-darkpink); 
     margin: 15px 0;
