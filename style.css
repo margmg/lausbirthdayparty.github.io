@@ -711,7 +711,7 @@ input[type="text"], #textarea {
     font-size: clamp(2.5vw, calc(8vw + 2rem), 3.4rem);
     font-weight: 600;
 }
-.lineup-event-6vw{
+.lineup-event-6vw, .lineup-event-5vw{
     color: var(--maincolor-darkpink);
     font-size: 6vw;
     font-weight: 600;
@@ -1027,7 +1027,7 @@ table, figure{
     }
 
     .separazione{
-        margin-top: 5%;
+        margin-top: 11%;
         background-color: #ff5159;
         height: 1px;
     }
@@ -1325,6 +1325,19 @@ table, figure{
         margin-bottom: 5px; 
       }
     
+    .lineup-event-5vw {
+        text-align: left;
+        font-size: 3.5em; 
+        font-weight: 600;
+        padding: 0;
+    }
+
+    .lineup-event-5vw li {
+        font-size: 1em; 
+        margin-bottom: 5px; 
+      }
+
+
       .info-up {
         flex-direction: row; 
         justify-content: space-between; 
