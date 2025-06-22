@@ -931,7 +931,7 @@ table, figure{
     }
 
     #homeMobile{
-        margin-top: 18%;
+        margin-top: 100px;
     }
     
     .event-info-mobile{
@@ -1451,6 +1451,7 @@ table, figure{
     #homeMobile{
         display: flex;
         flex-direction: column;
+        margin-top: 60px;
     }
     
     .event-info-mobile{
